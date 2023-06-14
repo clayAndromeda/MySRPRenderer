@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Rendering;
 
-namespace ClayRenderer.Runtime
+namespace ClayRenderer.Runtime.SRP0000_Examples
 {
     [CreateAssetMenu(menuName = "Rendering/ClayRenderer/Example Render Pipeline Asset")]
     public class ExampleRenderPipelineAsset : RenderPipelineAsset

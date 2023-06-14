@@ -1,8 +1,8 @@
-using UnityEditor.Build.Content;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
 
-namespace ClayRenderer.Runtime
+namespace ClayRenderer.Runtime.SRP0000_Examples
 {
     public class ExampleRenderPipeline : RenderPipeline
     {
@@ -11,8 +11,12 @@ namespace ClayRenderer.Runtime
         {
             renderPipelineAsset = asset;
         }
-        
+
         protected override void Render(ScriptableRenderContext context, Camera[] cameras)
+        {
+            Render(context, new List<Camera>(cameras));
+        }
+        protected override void Render(ScriptableRenderContext context, List<Camera> cameras)
         {
             // 現在のレンダーターゲットを消去するコマンドを作成してスケジューリングします
             var cmd = new CommandBuffer();
