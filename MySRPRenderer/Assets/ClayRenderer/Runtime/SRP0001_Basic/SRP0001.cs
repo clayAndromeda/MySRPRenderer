@@ -47,7 +47,6 @@ namespace ClayRenderer.Runtime.SRP0001_Basic
                 {
                     continue;
                 }
-
                 CullingResults cullingResults = context.Cull(ref cullingParameters);
 
                 // builtin variablesをカメラごとにセットアップする
