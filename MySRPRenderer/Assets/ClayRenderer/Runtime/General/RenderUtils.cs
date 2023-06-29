@@ -10,6 +10,7 @@ namespace ClayRenderer.Runtime.General
         {
             RendererList rendererList = context.CreateSkyboxRendererList(camera);
             CommandBuffer cmd = new CommandBuffer();
+            cmd.name = "Render Skybox";
             cmd.DrawRendererList(rendererList);
             context.ExecuteCommandBuffer(cmd);
             cmd.Release();
