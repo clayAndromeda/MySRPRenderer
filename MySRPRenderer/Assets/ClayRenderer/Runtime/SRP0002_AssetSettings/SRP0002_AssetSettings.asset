@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
-  m_Name: SRP0002Renderer
+  m_Name: SRP0002_AssetSettings
   m_EditorClassIdentifier: Assembly-CSharp:ClayRenderer.Runtime.SRP0002_AssetSettings:SRP0002RenderPipelineAsset
   drawOpaqueObjects: 1
   drawTransparentObjects: 1

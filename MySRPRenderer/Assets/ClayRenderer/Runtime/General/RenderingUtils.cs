@@ -3,7 +3,7 @@ using UnityEngine.Rendering;
 
 namespace ClayRenderer.Runtime.General
 {
-    public static class RenderUtils
+    public static class RenderingUtils
     {
         // SRPでSkyboxを描画する
         public static void RenderSkybox(ScriptableRenderContext context, Camera camera)
@@ -28,5 +28,7 @@ namespace ClayRenderer.Runtime.General
             context.ExecuteCommandBuffer(cmd);
             cmd.Release();
         }
+        
+        // public static DrawingSettings CreateDrawingSettings(ShaderTagId shaderTagId, ref RenderingData renderingData, SortingCriteria sortingCriteria)
     }
 }

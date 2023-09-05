@@ -78,7 +78,7 @@ namespace ClayRenderer.Runtime.SRP0002_AssetSettings
                 // Skybox
                 if (drawSkybox)
                 {
-                    RenderUtils.RenderSkybox(context, camera);
+                    RenderingUtils.RenderSkybox(context, camera);
                 }
 
                 // 不透明オブジェクトを描画する
@@ -87,7 +87,7 @@ namespace ClayRenderer.Runtime.SRP0002_AssetSettings
                     sortingSettings.criteria = SortingCriteria.CommonOpaque;
                     drawingSettings.sortingSettings = sortingSettings;
                     filteringSettings.renderQueueRange = RenderQueueRange.opaque;
-                    RenderUtils.RenderObjects(
+                    RenderingUtils.RenderObjects(
                         "Render Opaque Objects",
                         context, cullingResults, filteringSettings, drawingSettings);
                 }
@@ -98,7 +98,7 @@ namespace ClayRenderer.Runtime.SRP0002_AssetSettings
                     sortingSettings.criteria = SortingCriteria.CommonTransparent;
                     drawingSettings.sortingSettings = sortingSettings;
                     filteringSettings.renderQueueRange = RenderQueueRange.transparent;
-                    RenderUtils.RenderObjects(
+                    RenderingUtils.RenderObjects(
                         "Render Transparent Objects",
                         context, cullingResults, filteringSettings, drawingSettings);
                 }
